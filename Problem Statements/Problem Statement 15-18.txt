@@ -1,0 +1,25 @@
+Problem Statement 15: (Government healthcare facility disparity)
+ 
+ Since the resources are limited, it is required to identify the region which lacks the healthcare facility the most for creating new government hospitals. 
+
+ An idea was suggested* that first the three States/UTs which have the least amount of beds (in all hospitals government and private) for their population is identified. Among those three the state which has the least number of government hospitals can be recommended for setting up a new government hospital. 
+
+World Health Organization Standards 
+
+According to WHO standards, a minimum of 3 beds per 1000 people is required. Monica wants to analyse whether different regions in India as well as the nation as a whole are up to that standard. If not, how many facilities are required to fill the gap? 
+ 
+Problem Statement 16: (Gap in number of beds) 
+
+Visually represent the difference between the expected number of hospital beds and the available number of hospital beds in each State/UT, as well as at the national level (if any). 
+
+Problem Statement 17: (Hospitals required to meet the standards) 
+
+ In a hypothetical situation if the government wishes to fill the gap between the available facility and the WHO standards all by itself how many government hospitals may be required in each state or union territory as well as at the national level? 
+ Find the average number of beds in a government hospital. Divide it by the gap in the number of beds to reach the standards in the region, and round the number to the nearest integer to find the value. 
+ Represent the findings visually. 
+
+Problem Statement 18: (Detailed Assessment of Housing Quality and Its Correlation with Demographic Factors in Urban and Rural Areas) 
+
+Objective: Conduct an in-depth assessment of how housing quality varies between urban and rural areas and its correlation with demographic factors such as age distribution, literacy, and gender ratios. The goal is to identify specific demographic factors that may require infrastructural adjustments or targeted social programs.
+Approach: Employ pandas for sophisticated data manipulation to merge and analyze data from both the census and housing datasets. Examine the quality of housing in terms of livability and amenities and correlate these with demographic factors using advanced statistical methods. Use seaborn to create detailed visualizations such as heatmaps and multi-axis plots that can reveal complex interdependencies between these variables.
+Data Considered: Housing dataset for detailed conditions and amenities data, alongside census data for comprehensive demographic analysis.

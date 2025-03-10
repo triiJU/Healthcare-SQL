@@ -1,0 +1,45 @@
+Clean and gain Insights from the Hospital Data 
+
+Aliah, as a representative of the department, is willing to know if any insights can be gained from the Hospital data (Data/hospitals.csv). Apart from general information she wants to know which states need more hospital beds at the earliest. 
+Assist Aliah to gain insights from the data after cleaning it.  
+ 
+Problem Statement 10: (Fix the header) 
+
+Import the hospital data from Data/hospitals.csv and make the necessary changes to the header (Do not change the original file). 
+The header uses acronyms that are defined in metadata.csv. Find the data and rename the headers so that it is more understandable to users who are not familiar with the acronyms. The First cell in the header is missing which should be renamed to State/UT. Rename the other headers in a uniform format.  
+
+Problem Statement 11: (Create a function to alter the data to create uniformity) 
+
+The State/UT names have some different formats compared to other census and housing data. Manually identify those differences and fix them so that the State/UT names match exactly with the census and housing data.  
+A function should be created to perform this operation. Since the same operation is required for another dataset as well.  
+After the process save the data in a CSV file named “all_hospitals.csv” in the “Clean_Data” folder 
+
+Problem Statement 12: (Analyze Healthcare facility disparity) 
+
+Visually represent how many hospital beds are there for every 10,000 people in each state or union territory. The national value should also be represented in the same visualization such that the value for each state can be compared to it.
+Report three States/UTs which have the least amount of beds for their population so that more beds can be added to the hospitals in respective states. 
+
+
+Government Hospitals Requirement Analysis 
+
+The Union of Doctors in its meeting passed a resolution that the government hospitals are lacking in numbers in many states, The government has taken notice of the resolution and has asked for a recommendation for the state where a new government hospital can be set up.  
+Use the government hospital data (Data/government_hospitals.csv) to suggest which state the government should create a new hospital. 
+
+Problem Statement 13: (Multi-line header) 
+The header in (Data/government_hospitals.csv) is in 2 rows  
+
+The headers are required to be edited for ease of future use as well as for the sake of uniformity.  
+ 
+Import and update the data in a way that it has the following column names 
+State/UT 
+* Rural_Government_Hospitals 
+* Rural_Government_Beds 
+* Urban_Government_Hospitals 
+* Urban_Government_Beds 
+* Last_Updated 
+
+Problem Statement 14: (Data update and code reuse) 
+
+The ”Last_Updated” column contains a date that is in the format  DD.MM.YYYY but in the future, the date is required in a different format (YYYY-MM-DD)  update the date to the required format. 
+The State/UT names have some different formats compared to other census and housing data. Fix those issues using the function created earlier. If the function created earlier for all_hospitals cannot be used for government_hospital then edit the function so that it can be used for both. 
+Create a new file “government_hospital.csv” in the “Clean” folder and save all the government hospital data after the update. 

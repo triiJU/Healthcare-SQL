@@ -1,0 +1,54 @@
+Clean the Census data 
+The healthcare department wants to process the 2011 census data (Data/census2011.csv) to find some relevant information about their department. 
+However, there is a lot of information in the data that is not relevant and can be ignored. 
+There are differences in the nomenclature in different datasets so a uniform nomenclature needs to be found as well. 
+New states and Union Territories have been formed at the time of analysis which has to be taken care of so that the data can be used with the data that was captured later. 
+It is also reported that some data is missing in the dataset. However, the values of some of these missing data can be found by using data from other fields.  
+You have been given the responsibility to address these problems and create clean data that can be used later. 
+
+Problem Statement 1: (Keep the relevant data) 
+The census 2011 file contains many fields, which we may not use. Remove some columns so that we are left with only relevant data. 
+We may need the following columns. 
+* State name 	
+* District name 
+* Population 
+* Male 	
+* Female 	
+* Literate 
+* Male_Literate 
+* Female_Literate 
+* Rural_Households 
+* Urban_Households 
+* Households 
+* Age_Group_0_29 	
+* Age_Group_30_49 
+* Age_Group_50 	
+* Age not stated
+Import the data to pandas and keep only the required columns.
+
+Problem Statement 2: (Rename the Column names) 
+For uniformity in the datasets and taking into consideration the census year, we need to rename some columns. 
+* State name  to State/UT 
+* District name to District 
+* Male_Literate to Literate_Male 
+* Female_Literate to Literate_Female 
+* Rural_Households to Households_Rural 
+* Urban_ Households to Households_Urban 	
+* Age_Group_0_29 to Young_and_Adult 
+* Age_Group_30_49 to Middle_Aged 
+* Age_Group_50 to Senior_Citizen 
+* Age not stated to Age_Not_Stated
+
+Problem Statement 3: (Rename State/UT Names)
+The State/UT names are in all caps in the census data, For uniformity across datasets we use the names so that only the first character of each word in the name is in upper case and the rest are in lower case. 
+However, if the word is “and” then it should be all lowercase. 
+Examples:
+* Andaman and Nicobar Islands 
+* Arunachal Pradesh 
+* Bihar
+
+Problem Statement 4: (New State/UT formation) 
+In 2014 Telangana was formed after it split from Andhra Pradesh, The districts that were included in Telangana are stored in Data/Telangana.txt .
+Read the text file and Rename the State/UT From “Andhra Pradesh” to “Telangana” for the given districts. 
+In 2019 Laddakh was formed after it split from Jammu and Kashmir, which included the districts Leh and Kargil.  
+Rename the State/UT From “Jammu and Kashmir” to “Laddakh” for the given districts.

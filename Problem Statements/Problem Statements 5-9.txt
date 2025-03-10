@@ -1,0 +1,66 @@
+Problem Statement 5: (Find and process Missing Data) 
+
+Find and store the percentage of data missing for each column. 
+
+Some data can be found and filled in by using information from other cells. Try to find the correct data by using information from other cells and filling it in. Find and store the percentage of data missing for each column. 
+ 
+Hint: 
+	* Population = Male + Female 
+	* Literate = Literate_Male + Literate_Female 
+	* Population  = Young_and_Adult+  Middle_Aged + Senior_Citizen + Age_Not_Stated 
+	* Households = Households_Rural + Households_Urban  
+ 
+Create a visualization that compares the amount of missing data before and after the data-filling process was done.  
+
+
+Problem Statement 6: (Save Data) 
+
+Save the processed data to a CSV file named “census.csv” in the “Clean_Data” folder. 
+
+Extract Information from the housing data along with the census data 
+
+Siddhu, from Healthcare Department, has reported that the household data that they have (Data/housing.csv), requires some processing in the context of the census data so that more information can be extracted from it.  
+
+Process the housing data and census data to gain some insight. 
+
+
+Problem Statement 7: (Process the relevant data) 
+
+From the housing data(Data/housing.csv) read the following columns which may be relevant to the requirement. 
+	* District Name 
+	* Rural/Urban 
+	* Total Number of households 
+	* Total Number of Livable 
+	* Total Number of Dilapidated 
+	* Latrine_premise 
+ 
+In the given data The total number of households, Total Number of Livable, Total Number of Dilapidated, Latrine_premise, etc. seem to be in percentage terms and not in absolute terms. 
+
+The total number of households in a district can be found in the census data. Take the information from the census data and find the absolute values for the Total Number of Dilapidated, and Latrine_premise for both rural and urban areas of each district. 
+
+Calculate the data and rename the column names and save it in a CSV file named “housing.csv” in the “Clean_Data” folder, such that it  has the following column names: 
+	* District 
+	* Households_Rural 
+	* Households_Rural_Livable 
+	* Households_Rural_Dilapidated 
+	* Households_Rural_Toilet_Premise 
+	* Households_Urban 
+	* Households_Urban_Livable 
+	* Households_Urban_Dilapidated 
+	* Households_Urban_Toilet_Premise 
+ 
+Report if any district data is in one file but not the other. 
+
+
+Problem Statement 8: (Visualise the housing data) 
+
+Visualize the following data for each state using appropriate methods: 
+	* Number of households for 100 people 
+	* Percentage of households that have toilet(s) in premise to the total number of households. 
+	* Urban to rural population ratio. 
+
+
+Problem Statement 9: (Inconsistency in different datasets) 
+
+After the updates, the “Households_Rural” and “Households_Urban” data are redundant in both housing and census data. Compare the two data and see if there is a major difference between the values in the two files. A difference of more than 10% can be considered a major difference. Report the names of the districts where a major difference is found in the data. 
+ 

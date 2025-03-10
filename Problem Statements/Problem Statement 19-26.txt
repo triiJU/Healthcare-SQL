@@ -1,0 +1,48 @@
+Problem Statement 19: (Evaluation of AYUSH Hospital Utilization and Accessibility Across Different Demographic and Socio-economic Backgrounds) 
+
+Objective: Evaluate the utilization rates and accessibility of AYUSH hospitals across various states, with a focus on understanding how different demographic and socio-economic backgrounds affect access to these alternative medicine facilities.
+Approach: Use pandas to integrate data from the AYUSH hospitals dataset with demographic and socio-economic indicators from the census data. The analysis will involve calculating the ratios of AYUSH hospitals to population and comparing these ratios across different socio-economic strata. Employ seaborn to generate cluster analysis or factor analysis visualizations that can help in identifying patterns of utilization and accessibility.
+Data Considered: AYUSH hospitals data for facility counts and features, census data for demographic and socio-economic indicators.
+
+Problem Statement 20: (District-Level Population Density Analysis) 
+
+Objective: Determine the population density of each district and identify the most densely populated districts in each state.
+Approach: Use pandas to calculate population density by dividing the total population by the district area (if area data is available or can be approximated). Visualize the results using seaborn's bar plots or heatmaps to compare densities across districts and states.
+Data Considered: Census data, particularly the total population per district. Area data would need to be sourced if not available in the provided datasets.
+
+Problem Statement 21: (Gender Literacy Gap Analysis)
+ 
+Objective: Analyze the literacy rates between males and females across different districts to identify regions with significant gender disparities in education.
+Approach: Calculate the literacy gap by subtracting female literacy rates from male literacy rates using pandas. Use seaborn to create visualizations such as box plots or violin plots to show the distribution of these gaps across different states.
+Data Considered: Census data, focusing on literacy rates for males and females across districts.
+
+Problem Statement 22: (Urban vs. Rural Healthcare Accessibility) 
+
+Objective: Compare the availability of healthcare facilities (hospitals and beds) between urban and rural areas within each state.
+Approach: Segment the data into urban and rural categories, then calculate and compare the totals and per capita figures of hospitals and beds using pandas. Visualize the comparisons with seaborn's scatter plots or dual-axis charts to illustrate differences in accessibility.
+Data Considered: Hospital data and government hospital data, with a focus on rural versus urban categorization of facilities.
+
+Problem Statement 23: (Distribution Analysis of AYUSH Hospitals) 
+
+Objective: Assess the distribution and accessibility of AYUSH hospitals across different states to determine their integration into the mainstream healthcare system.
+Approach: Aggregate the number of AYUSH hospitals and beds by state using pandas, and use seaborn to visualize this distribution with bar charts or pie charts.
+Data Considered: AYUSH Hospitals data.
+
+Problem Statement 24: (Analysis of Housing Conditions Across Districts) 
+
+Objective: Analyze and compare housing conditions across districts, focusing on livability and the presence of amenities like latrines.
+Approach: Use pandas to analyze the housing data for metrics on livability and amenities, and create visualizations with seaborn to compare these conditions across different districts.
+Data Considered: Housing data, which includes details on housing conditions and amenities.
+
+
+Problem Statement 25: (State-Level Hospital Resource Allocation) 
+
+Objective: Evaluate hospital resource allocation efficiency at the state level by comparing the number of beds to the population.
+Approach: Calculate hospital beds per thousand people using hospital data and population figures from the census data with pandas. Use seaborn for visualization to identify states with under or over-allocation of resources.
+Data Considered: Hospital data and census data
+
+Problem Statement 26: (Demographic Impact on Hospital Needs)
+ 
+Objective: Investigate the relationship between population demographics (age, gender, literacy) and the need for hospital services.
+Approach: Use pandas to correlate population metrics from the census data with the number of hospitals and beds per capita from the hospital data. Employ seaborn to visualize these correlations using scatter plots or regression plots.
+Data Considered: Census data for demographic details and hospital data for healthcare facility information.
